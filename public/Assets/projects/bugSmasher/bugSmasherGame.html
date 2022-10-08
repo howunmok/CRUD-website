@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+      Student Name: Ho Wun Mok
+      Student No.: 301237442
+      Date:   October 8, 2022
+      Filename: bugSmasherGame.html
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Smasher</title>
+    <link rel="stylesheet" href="bugstyle.css" />
+</head>
+<body>
+    <table>
+        <tr>
+            <td style="width:300px;">
+                <div id = "score"></div>
+                <div id = "title">Bug Smasher</div>
+            </td>
+            <td style="width:200px;">
+                <button id = "scoreButton"  onclick = "resetScore()">Reset Score</button>
+            </td>
+            <td>
+                <button id = "speedButton" onclick = "resetSpeed()">Reset Speed</button>
+            </td>
+        </tr>
+    </table>
+    <div id = "theCanvas"></div>
+    <script src="bugjs.js"></script>
+    <div class = "copyright">
+        <br>
+        <small><i>&nbsp;Copyright &copy; 2022&nbsp;&nbsp;Ho Wun Mok 301237442 COMP125 Assignment 5</i></small>
+      </div>
+</body>
+</html>

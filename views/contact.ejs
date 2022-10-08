@@ -1,0 +1,61 @@
+<!--
+      Student Name: Ho Wun Mok
+      Student No.: 301237442
+      Date:   October 8, 2022
+      Filename: contact.ejs
+    -->
+
+<%- include partials/header.ejs %>
+
+<%- include partials/content.ejs %>
+
+<main>
+  <h2>Contact Me NOW!</h2>
+  <br><br>
+  <table style="width: 60%">
+    <tr>
+      <td>Contact number:</td>
+      <td class="contact"><a href="tel:+16471234567">+1 647 123 4567</a></td>
+    </tr>
+    <tr>
+      <td>Facebook ID:</td>
+      <td class="contact"><a href="https://www.facebook.com/bv.itswords" target="_blank">
+        BV.ITSWORDS</a></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td class="contact"><a href="mailto:hmok11@mycentennialcollege.ca">
+        Benny @ Centennial College</a></td>
+    </tr>
+  </table>
+  <br><br>
+  <fieldset>
+    <legend style="font-size: 20px;"><b>Tell me about yourself</b></legend>
+      <form action = "/contact" method = "POST">
+        <p><label for="myFName">*First Name:</label>
+        <input type="text" name="myFName" id="myFName" required="required" size="35"></p>
+        <br>
+        <p><label for="myLName">*Last Name:</label>
+        <input type="text" name="myLName" id="myLName" required="required" size="35"></p>
+        <br>
+        <p><label for="myPhone">Phone:</label>
+        <input type="tel" name="myPhone" id="myPhone" maxlength="12" size="42" placeholder="+# (###) ###-####"></p>
+        <br>
+        <p><label for="myEmail">*E-mail:</label>
+        <input type="email" name="myEmail" id="myEmail" required="required" size="40" placeholder="name@domain.com"></p>
+        <br>
+    
+        <label for="CommentsMessage">Comments / Message:</label>
+        <br>
+        <textarea name="myComments" id="myComments" rows="10" cols="75" 
+        placeholder="Hi Benny, I'm interested in your portfolio."></textarea>
+        <br><br>
+        <p style="font-size:10px; color: #000000">Required fields are marked with an asterisk *</p>
+        <input type="submit" id="submit" value="Submit">
+      </form>
+  </fieldset>
+  </main>
+
+<%- include partials/right_contact.ejs %>
+
+<%- include partials/footer.ejs %>
