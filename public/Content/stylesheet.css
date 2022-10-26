@@ -54,8 +54,12 @@ a:visited {
 	color:#708090;
 }
 
-a > span {
+a > span.yellowBtn {
 	color: orange;
+}
+
+a > span.redBtn {
+	color: red;
 }
 
 a > span:hover {
