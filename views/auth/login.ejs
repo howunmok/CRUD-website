@@ -1,0 +1,53 @@
+<!--
+    Student Name: Ho Wun Mok
+    Student No.: 301237442
+    Date:   October 26, 2022
+    Filename: login.ejs
+-->
+
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/content.ejs %>
+
+<!--Content for the Add page-->
+<main>
+    <div class="container">
+        <% if(message.length > 0) { %>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <%= message %>
+            </div>
+        <% } %>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Admin Login</h2>
+                <br>
+                <form method="POST" autocomplete="off">
+                    <div class="form-group">
+                        <label for="username">Username: </label>
+                        <input type="text" class="form-control"
+                        name="username" placeholder="Enter Username"
+                        id="username" required autofocus>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="password">Password: </label>
+                        <input type="password" class="form-control"
+                        name="password" placeholder="Enter Password"
+                        id="password" required>
+                    </div>
+                    <br>
+                    <div class="form-group text-right">
+                        <input type="submit" class="btn btn-outline-success" value="Login">
+                        <a href="/">
+                            <input type="button" class="btn btn-outline-warning" value="Cancel">
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include ../partials/right_contact.ejs %>
+  
+<%- include ../partials/footer.ejs %>

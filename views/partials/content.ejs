@@ -1,21 +1,27 @@
 <!--
       Student Name: Ho Wun Mok
       Student No.: 301237442
-      Date:   October 8, 2022
+      Date:   October 26, 2022
       Filename: content.ejs
     -->
 
 <div id="wrapper">
 <header>
-    <h1>BENNY MOK</h1>
-	<br>
-	<table style="width:100%">
+    <h1 class="fw-bolder">BENNY MOK</h1>
+	<table style="width:120%">
 		<tr>
-			<th><a href="/home">Home Page</a></th>
-			<th><a href="/aboutme">About Me</a></th>
-			<th><a href="/projects">Project</a></th>
-			<th><a href="/services">Services</a></th>
-			<th><a href="/contact">Contact Me</a></th>
+			<th><a href="/home"><i class="fas fa-laptop-house"></i> Home Page</a></th>
+			<th><a href="/aboutme"><i class="fas fa-info-circle"></i> About Me</a></th>
+			<th><a href="/projects"><i class="fas fa-tools"></i> Project</a></th>
+			<th><a href="/services"><i class="fas fa-concierge-bell"></i> Services</a></th>
+			<th><a href="/contact"><i class="fas fa-phone"></i> Contact Me</a></th>
+
+			<% if(typeof displayName == 'string' && displayName) { %>
+				<th><a href="/business-contact"><i class="fas fa-business-time"></i> Business Contact</a></th>
+				<th><a href="/logout"><i class="fas fa-sign-out-alt"></i> Logout</a></th>
+				<% } else { %>
+				<th><a href="/login"><i class="fas fa-sign-in-alt"></i> Admin Login</a></th>
+				<% } %>
 		</tr>
 	</table>
-	</header>
+</header>

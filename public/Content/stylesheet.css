@@ -1,4 +1,10 @@
 /*custom css*/
+/*  
+    Student Name: Ho Wun Mok
+    Student No.: 301237442
+    Date:   October 26, 2022
+    Filename: stylesheet.css
+*/
 
 * { 
 	box-sizing: border-box;
@@ -19,7 +25,7 @@ header {
 	background-size: auto 75%;
 	background-position-y: 15px;
 	background-position-x: 35px;
-	padding: 2em 13em 2em;
+	padding: 2em 12em 2em;
 }
 
 tr {
@@ -48,6 +54,13 @@ a:visited {
 	color:#708090;
 }
 
+a > span {
+	color: orange;
+}
+
+a > span:hover {
+	color: #000000 !important;
+}
 
 main {   
 	background-color: #FFFFFF;
